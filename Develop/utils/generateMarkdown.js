@@ -9,23 +9,10 @@ function renderLicenseBadge(data) {
     licenseChosen = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
   } else if (licenseType === `Apache 2.0 License`) {
     licenseChosen = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-  }
+  };
+  return licenseChosen
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(data) {
-  let licenseType = `${data.license}`;
-  let licenseChosen = ``;
-  if (licenseType === `MIT License`) {
-    licenseChosen = `(https://opensource.org/licenses/MIT)`;
-  } else if (licenseType === `GNU General Public License v3.0`) {
-    licenseChosen = `(https://www.gnu.org/licenses/gpl-3.0)`;
-  } else if (licenseType === `Apache 2.0 License`) {
-    licenseChosen = `(https://opensource.org/licenses/Apache-2.0)`;
-  }
-  return licenseChosen;
-}
 
 
 // TODO: Create a function that returns the license section of README
@@ -40,6 +27,7 @@ function renderLicenseSection(license) {
   } else if (licenseType === `Apache 2.0 License`) {
     licenseChosen = `Apache 2.0 License`;
   }
+console.log(`licenseChosen`); 
   return licenseChosen;
 }
 
@@ -47,8 +35,8 @@ function renderLicenseSection(license) {
 
 function generateMarkdown(data) {
   return `
-  ### License: ${renderLicenseBadge(data)}, ${renderLicenseLink(data)}
-  # Title: ${data}
+  ###  ${renderLicenseBadge(data)}
+  #  ${data.title}
   ## Table of Contents:
   
  - [Description](#description)
@@ -68,6 +56,7 @@ function generateMarkdown(data) {
  ## Tests
  ${data.testing}
  ## Questions?
+If there are any questions please reach out to: ${data.contact}
   `;
 }
 module.exports = generateMarkdown;

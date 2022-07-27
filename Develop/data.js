@@ -4,6 +4,11 @@ const questions = [
     type: `input`,
     message: `What is the title of your project?`,
     name: `title`,
+  }, 
+  {
+    type: `input`,
+    message: `enter description of your project`,
+    name: `description`,
   },
   {
     type: `list`,
