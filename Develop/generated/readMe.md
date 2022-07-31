@@ -1,6 +1,6 @@
 
   ###  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  #  f
+  #  Read Me Generator
   ## Table of Contents:
   
  - [Description](#description)
@@ -10,15 +10,15 @@
  - [Tests](#tests)
  - [Questions](#questions)
  ## Description
- ff
+ generates readme from a template
  ## Installation
- f
+ need inquirer etc.
  ## Usage 
- f
+ use free
  ## Contributing
- f
+ my tutor 
  ## Tests
- f
+ test
  ## Questions?
-If there are any questions please reach out to: f
+If there are any questions please reach out to: lev@merka.us
   
