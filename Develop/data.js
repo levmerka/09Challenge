@@ -4,7 +4,7 @@ const questions = [
     type: `input`,
     message: `What is the title of your project?`,
     name: `title`,
-  }, 
+  },
   {
     type: `input`,
     message: `enter description of your project`,
@@ -14,7 +14,11 @@ const questions = [
     type: `list`,
     message: `select LICENSE`,
     name: `license`,
-    choices: [`MIT License`, `Apache 2.0 License`, `GNU General Public License v3.0`],
+    choices: [
+      `MIT License`,
+      `Apache 2.0 License`,
+      `GNU General Public License v3.0`,
+    ],
   },
   {
     type: `input`,
